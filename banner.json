@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-26-lora-rssi",
+  "eyebrow": "PICOKIT // LESSON 26",
+  "title": "PICOKIT // LORA RSSI",
+  "subtitle": "SIGNAL QUALITY + AUTHENTICATED HEARTBEAT",
+  "accent": "#FF0100",
+  "dim": "#9E0000",
+  "white": "#F3D2DB",
+  "cyan": "#7FD8E0",
+  "bg": "#110000",
+  "bg_edge": "#050000",
+  "icon": "wave",
+  "panel_status": "Q -72 dBm  ·  S 4 dB  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "RSSI",
+      "value": "-72"
+    },
+    {
+      "label": "SNR",
+      "value": "4 dB"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "LCD",
+      "value": "1602"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00026  seq 18  HEARTBEAT  AEAD ok",
+    "[*] last inbound rssi -72  snr 4",
+    "[+] lcd shows Q -72  S 4  led green",
+    "[+] ack sent  rssi -72  snr 4.0"
+  ],
+  "categories": [
+    "RSSI",
+    "SNR",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "Q-01",
+      "label": "rssi",
+      "value": "-72"
+    },
+    {
+      "tag": "S-01",
+      "label": "snr",
+      "value": "4 dB"
+    },
+    {
+      "tag": "HB-01",
+      "label": "heartbeat",
+      "value": "5 s"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  SIGNAL QUALITY  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  LISTEN  ·  MEASURE  ·  RADIO  ==[ RSSI ]=="
+  ],
+  "layout": "panel",
+  "stat": "-72"
+}
